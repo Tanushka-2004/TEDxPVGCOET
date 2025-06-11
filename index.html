@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEDxPVGCOET</title>
+
+   
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script defer src="js/script.js"></script>
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<!--animate on scroll-->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+    }
+    .navbar {
+  background-color: #111;
+  width: 100%;                  /* Make it full width */
+  display: flex;                /* For layout control */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;              /* Optional padding for spacing */
+  box-sizing: border-box;       /* Ensures padding doesn't break layout */
+  margin-bottom: 0;
+}
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .navbar-brand span {
+      color: red;
+    }
+    .nav-link {
+      color: white !important;
+      padding: 0.75rem 1rem;
+      position: relative;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: red !important;
+    }
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: red;
+    }
+    .dropdown-menu {
+      background-color: #222;
+    }
+    .dropdown-item {
+      color: white;
+    }
+    .dropdown-item:hover {
+      background-color: red;
+      color: white;
+    }
+
+   
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.animated-image {
+    animation: zoomIn 1.2s ease-out forwards;
+  }
+
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+  <video autoplay muted loop id="bg-video">
+    <source src="images/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!-- Use relative path like images/logo-white.png -->
+        <img src="images/logo-white.png" alt="TEDx Logo" height="40">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#past-events">Past Events</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#contact_us">Contact Us</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="#guidelines">Guidelines</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Punarutthan Image -->
+<section id="home">
+    <div class="image-container" style="position: relative; display: inline-block;">
+      <img src="images/Punarutthan3.0.jpg" alt="Punarutthan Logo"
+           style="width: 100vw; height: 550px; display: block; margin: 0 auto;" class="animated-image">
+      <!-- "Book Now" Button -->
+     
+     <a href="#" class="book-now-btn">Book Now</a>
+
+    </div>
+</section>
+
+  </header>
+
+  
+
+  <!-- what is tedx-->
+  <section data-section="about-tedx" class="tedx-section">
+  <div class="tedx-container">
+    <div class="tedx-left">
+      <h2>What is <span>TEDx</span>?</h2>
+      <a href="https://www.ted.com/tedx" target="_blank" class="tedx-link">TEDx PROGRAM →</a>
+    </div>
+    <div class="tedx-right">
+      <p>
+        In the spirit of ideas worth spreading, TED has created a program called TEDx.
+        TEDx is a program of local, self-organized events that bring people together to
+        share a TED-like experience. Our event is called TEDxPVGCOET, where x = independently
+        organized TED event. TED Talks video and live speakers combine to spark deep discussion
+        and connection. TED provides general guidance for the TEDx program, but individual events
+        like ours are self-organized.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- Bootstrap JS -->
+  
+
+<!--Event Highlights-->
+<section id="highlights" class="highlights-section">
+  <h2 id="expect-heading">What to Expect ?</h2>
+  <div class="highlights-container">
+    <div class="highlight-card">
+      <img src="icons/mic-svgrepo-com.svg" alt="Inspiring Talks" />
+      <h3>Inspiring Talks</h3>
+      <p>Listen to renowned speakers and thought leaders across industries.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="icons/people-team-svgrepo-com.svg" alt="Live Performances" />
+      <h3>Live Performances</h3>
+      <p>Experience electrifying cultural shows, music, and more.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="icons/stage-svgrepo-com.svg" alt="Networking" />
+      <h3>Networking</h3>
+      <p>Connect with professionals, alumni, and fellow attendees.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="icons/tech-svgrepo-com.svg" alt="Tech Showcases" />
+      <h3>Tech Showcases</h3>
+      <p>Explore innovations and student projects on display.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="past-events">
+<!--past yr info-->
+  <div class="content-container">
+    <div class="text-section slide-left hidden">
+      <h2>TEDx PVGCOET 2024</h2>
+      <h2>PUNARUTTHAN</h2>
+      <p>TEDxPVGCOET 2024 marked the fourth edition of TEDx Talks at PVG's College of Engineering and Technology, Pune, held on January 13<sup>th</sup>, 2024. Centered around the theme <strong>"Punarutthan"</strong>, which means "Revival" or "Reawakening", the event aimed to spark conversations around rediscovering purpose, identity, and collective progress.</p>
+
+      <p>With a diverse lineup of speakers from renowned YouTuber Nomad Shubham to classical artist Dr. Swati Daithankar and cybersecurity expert Lt. Col. Dr. Santosh Khadsare – TEDxPVGCOET brought together voices from travel, music, entrepreneurship, archaeology, literature, and more. The event celebrated the power of ideas to revive, rebuild, and reimagine a better future for society.</p>
+
+    </div>
+    <div class="image-section slide-right hidden">
+      <img src="images/theme_image.png" alt="Nurture the Future Theme" />
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <section id="speakers" class="container">
+  <h2 class="text-center mb-4" id="speaker-font">Speakers</h2>
+  <div class="speaker-list">
+    <div class="speaker-block"  onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker1.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">NOMAD SHUBHAM</h2>
+        <p>Stands as <span class="red-text">prominent YouTuber</span> renowned for his captivating travel vlogs, amassing an impressive <span class="red-text">2.9+ million subscribers</span> on his YouTube channel .</p>
+        
+      </div>
+    </div>
+
+<div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker2.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">DR. SWATI DAITHANKAR</h2>
+        <p>Dr.Swati Daithankar, a renowned <span class="red-text">Bharatnatyam exponent</span> and<span class="red-text">Gold</span> is celebrated for her innovative apporoach to dance. Holder of a <span class="red-text">National Scholarship and Research Fellowship</span>, she uses Bharatnatyam as a powerful medium to showcase social awareness globally .</p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker3.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">SHRI.SHAKIR KHAN</h2>
+        <p>Shri. Shakir Khan, an <span class="red-text">Indian Classical Musician </span>a rising star of the Etawah Gharana,continues the musical legacy of his father, Ustad Shahid Parvez Khan.As the eighth generation <span class="red-text">Sitarist</span> in his family,he follows in the footsteps of Ustad Aziz Khan and Ustad Wahid Khan. </p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker4.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">SIDDHARTH MAYUR</h2>
+        <p>Founder and CEO at <span class="red-text">h2epower, MPowerInside</span> and President at <span class="red-text">MahaChess</span>. A first generation social entrepreneur with a mission to bring about energy and security and energuy independence to the masses using <span class="red-text">renewable and clean energy </span>power.</p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker5.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">LT COL DR.SANTOSH KHADSARE</h2>
+        <p>Lt. Col. Dr. Santosh Khadsare, a distinguished figure in Cyber Security and Digital Forensic, is a recipient of the 2021 <span class="red-text">Digital Forensic Analyst Excellence </span>Award. Boosting 25 years of expertise, he is not only a <span class="red-text">CII Tast Force</span>on Cyber Security member but also an <span class="red-text">Indian Army veteran</span> and an alumnus of PVGCOET.</p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker6.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">SONAL VED</h2>
+        <p>Sonal Ved is a Mumbai-based luminary, boasts a <span class="red-text">rich literary</span> and culinary portifolio. The author of two New York Times-acclaimed food books, "<span class="red-text">Tiffin</span>" and "<span class="red-text">Whose Samosa Is It Anyway?</span>"</p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker7.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">MUNEET DHIMAN</h2>
+        <p><span class="red-text">Founder, Leader and a teacher</span> at Vidyakshetra Gurukulam. He initiated the <span class="red-text">institution to bridge educatinal</span> gaps and promote holistic learning. He aspires to empower students with a well-rounded academic and cultural foundation.</p>
+      </div>
+    </div>
+
+    <div class="speaker-block" onclick="toggleSpeaker(this)" data-aos="fade-up">
+      <img src="images/speaker8.jpg" class="speaker-img" />
+      <div class="speaker-info">
+        <h4>Introducing</h4>
+        <h2 class="speaker-name">DR. VASANT SHINDE</h2>
+        <p><span class="red-text">Adjunct professor </span>at National Institute of Advanced Studies,IIC campus, Bangalore. <span class="red-text">Former professor and vice-chancellor</span> at Deccan College. Renowned for his research in <span class="red-text">South Assian Archaeology </span>and brings expertise to archaeological studies and academic administration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--previous yr performance-->
+  <section id="performance-photos">
+  <h2 id="prev-font">Last Year's Performance</h2>
+  <div class="photo-carousel">
+    <button id="prev">&#8592;</button>
+    <div class="photo-frame">
+     <img id="carousel-image" src="images/speech1.jpg" alt="Performance Photo">
+    </div>
+    <button id="next">&#8594;</button>
+  </div>
+ </section>
+</section>
+
+
+
+
+<!-- About page-->
+  <section id="about">
+  <div class="tedx-intro">
+    <div class="tedx-motto">
+      <h1 style="font-size: 50px;"><span>TED </span>empowers communities by giving a voice to<span> ideas worth spreading.</span></h1>
+    </div>
+    <div class="tedx-info">
+      <p style="font-size: 18px;">
+     TEDx is a locally organized program that brings communities together to share a TED-like experience. Licensed by TED but independently run, these events feature a mix of live speakers and TED Talk videos, all aimed at inspiring deep conversations and fresh ideas.
+
+     Rooted in the spirit of “ideas worth spreading,” TEDx events celebrate innovation, storytelling, and connection giving a platform to voices that spark curiosity, challenge norms, and encourage change within local communities.      </p>
+    </div>
+  </div>
+  
+  </section>
+
+
+  <!-- Ticket Booking Form -->
+  <section class="container my-5">
+    <h2>Book Your Tickets</h2>
+      <form id="ticketForm">
+       <input type="text" name="name" placeholder="Your Name" required />
+       <input type="email" name="email" placeholder="Your Email" required />
+       <button type="submit">Get Ticket</button>
+      </form>
+
+  </section>
+
+  <!--footer-->
+
+  <footer id="contact_us" class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <img src="images/logo-white.png" alt="TEDxMITWPU Logo" class="footer-logo" />
+        <p>TEDxPVGCOET brings inspiring ideas to life,<br />fostering meaningful conversations.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Past Editions</a></li>
+          <li><a href="#">Brochure</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Guidelines</a></li>
+          <li><a href="#">Book Now</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <a href="https://www.instagram.com/tedxpvgcoet/" target="_blank">
+          <img src="icons/instagram-1-svgrepo-com.svg" alt="Instagram" class="social-icon" /> Instagram
+        </a>
+
+        <a href="https://www.linkedin.com/company/tedxpvgcoet/" target="_blank">
+          <img src="icons/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon" /> LinkedIn
+        </a>
+      </div>
+    </div>
+  
+    <hr />
+    <p class="copyright">TEDxPVGCOET© 2025 - All Rights Reserved</p>
+  </footer>
+
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
